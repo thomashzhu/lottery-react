@@ -29,6 +29,15 @@ const abi = [
     type: 'function',
   },
   {
+    constant: true,
+    inputs: [],
+    name: 'winner',
+    outputs: [{ name: '', type: 'address' }],
+    payable: false,
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
     constant: false,
     inputs: [],
     name: 'enter',
@@ -54,6 +63,6 @@ const abi = [
   },
 ];
 
-const address = '0x065F48CA27c24F31e911C4a4E5218B6E3FC5e433';
+const address = '0xCDAc15899Ff70156A50Bd6fB16e3b687817B7eD1';
 
 export default new web3.eth.Contract(abi, address);
